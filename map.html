@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=loadMap" async defer></script>
+</head>
+<body>
+<div style="height:500px;width:500px;" id="yandexMap"></div>
+<script>
+    yandexMap = new ymaps.Map(
+        'yandexMap',
+        {
+            center: [51.6755, 39.2089],
+            zoom: 11,
+            type: 'yandex#satellite'
+        }
+    );
+}
+</script>
+</body>
+</html>
